@@ -59,12 +59,16 @@ margin-top: 7px;
 .countries{
   width: 370px;
   height: 75px;
-  margin-left: 130px;
+  margin-left: 110px;
+}
+.countries1{
+  background-color: inherit;
+  width: 500px;
 }
 .countries1 li{
 display: inline;
 float: left;
-width: 57px;
+width: 65px;
 text-align: center;
 }
 .countries1 li a{
@@ -80,17 +84,102 @@ font-size: 10px;
   margin: 0px auto;
 }
 .white3{
-  width: 1004px;
+  width: 1000px;
   height: 34px;
-  background-color: yellow;
   margin: 0px auto;
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgb(50, 50, 50);
+    width: 1000px;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+    margin-left: 40px;
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: rgb(50, 50, 50);
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: black;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 140px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: rgb(48, 48, 48);
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
 }
 .white4{
-  width: 1000px;
-  height: 8px;
-  background-color: red;
   margin: 0px auto;
+  width: 1000px; /* ширина трех блоков */
+  height: 545px;
+  float: left; /* чтобы не добавлять div с style="clear:both;" (не всегда уместно это применять) */
 }
+.fon {
+
+	}
+.leftColumn {
+  background-color: rgb(237,238,240);
+	width: 195px;
+  height: 536px;
+	float: left;
+  padding-left: 15px;
+  border-right: solid 1px gray;
+	}
+.centerColumn {
+	width: auto;
+  height: 536px;
+	float: left;
+
+
+	}
+.rightColumn {
+  background-color: rgb(237,238,240);
+	width: 195px;
+  height: 536px;
+	float: right;
+  padding-left: 15px;
+  border-left: solid 1px gray;
+	}
+  .title{
+    text-align: center;
+    font-family: tahoma;
+    font-size: 18px;
+    color: rgb(66,76,67);
+  }
 .copyright{
   width: 200px;
   height: 12px;
